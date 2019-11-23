@@ -12,6 +12,16 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1U06i8qfY1y8QPOIe90LDodCp15" />
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/ua/edu/ucu/utils" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Solya\Desktop\UCU\Programming\HW4\apps19dubnevych-hw4\src\main\java\ua\edu\ucu\utils" />
+      <recent name="C:\Users\Solya\Desktop\UCU\Programming\HW4\apps19dubnevych-hw4\src\main\java\ua\edu\ucu\tries" />
+      <recent name="C:\Users\Solya\Desktop\UCU\Programming\HW4\apps19dubnevych-hw4\src\test\java\ua\edu\ucu\autocomplete" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -23,6 +33,29 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="NodeTest.testFunctionality" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Autocomplete" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ua.edu.ucu.autocomplete.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ua.edu.ucu.autocomplete" />
+      <option name="MAIN_CLASS_NAME" value="ua.edu.ucu.autocomplete.NodeTest" />
+      <option name="METHOD_NAME" value="testFunctionality" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.NodeTest.testFunctionality" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -42,7 +75,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
