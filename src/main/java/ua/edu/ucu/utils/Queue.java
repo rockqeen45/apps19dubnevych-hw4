@@ -7,6 +7,13 @@ public class Queue {
         this.linkQ = new ImmutableLinkedList();
     }
 
+    public Queue(Object[] arr) {
+        this.linkQ = new ImmutableLinkedList();
+        for (int i = 0; i < arr.length; i++) {
+            enqueue(arr[i]);
+        }
+    }
+
     public Object peek() {
         return linkQ.getFirst();
     }
@@ -21,7 +28,7 @@ public class Queue {
         linkQ = linkQ.addLast(e);
     }
 
-    public Object[]  toArray() {
+    public Object[] toArray() {
         return linkQ.toArray();
     }
 

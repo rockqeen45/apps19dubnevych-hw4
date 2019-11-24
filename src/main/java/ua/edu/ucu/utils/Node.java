@@ -1,31 +1,29 @@
 package ua.edu.ucu.utils;
 
-public class Node {
-    private Object val;
-    private Node next;
+class Node {
+    Object data;
+    Node next;
 
-    public Node(Object val) {
-        this.val = val;
-        this.next = null;
+    Node(Object data) {
+        this.data = data;
+        next = null;
     }
 
-    public Object getVal() {
-        return val;
+    Node(Object data, Node next) {
+        this.data = data;
+        this.next = next;
     }
 
-    public void setVal(Object value) {
-        this.val = value;
+    Node copy() {
+        if (next == null) {
+            return new Node(data);
+        } else {
+            return new Node(data, next.copy());
+        }
     }
 
-    public Node getNext() {
-        return next;
-    }
-
-    public void setNext(Node nextN) {
-        this.next = nextN;
-    }
-
-    public void setNext(Object nextN) {
-        this.next = new Node(nextN);
+    void setNext(Node newNext) {
+        newNext.next = this.next;
+        this.next = newNext;
     }
 }

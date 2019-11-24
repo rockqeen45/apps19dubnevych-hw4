@@ -2,6 +2,11 @@ package ua.edu.ucu.autocomplete;
 
 import ua.edu.ucu.tries.Trie;
 import ua.edu.ucu.tries.Tuple;
+import ua.edu.ucu.utils.Queue;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 
 /**
  *
@@ -20,7 +25,7 @@ public class PrefixMatches {
         int addedWords = 0;
         for (String string: strings) {
             for (String word: string.split(" ")) {
-                if (word.length() >= MIN_PREFIX_LEN) {
+                if (word.length() > MIN_PREFIX_LEN) {
                     trie.add(new Tuple(word, word.length()));
                     addedWords++;
                 }
@@ -38,11 +43,28 @@ public class PrefixMatches {
     }
 
     public Iterable<String> wordsWithPrefix(String pref) {
+        if (pref.length() < 2) {
+            throw new IllegalArgumentException();
+        }
         return trie.wordsWithPrefix(pref);
     }
 
     public Iterable<String> wordsWithPrefix(String pref, int k) {
-        throw new UnsupportedOperationException("Not supported yet.");        
+        List<String> result = new LinkedList<>();
+        List<Integer> differentLengths = new ArrayList<>();
+        for (String word: wordsWithPrefix(pref)) {
+            if (differentLengths.contains(word.length())) {
+                result.add(word);
+            }
+            if (differentLengths.size() == k) {
+                continue;
+            }
+            if (!differentLengths.contains(word.length())) {
+                differentLengths.add(word.length());
+                result.add(word);
+            }
+        }
+        return result;
     }
 
     public int size() {

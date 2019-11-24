@@ -13,7 +13,7 @@
   </component>
   <component name="ProjectId" id="1U06i8qfY1y8QPOIe90LDodCp15" />
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/ua/edu/ucu/utils" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/ua/edu/ucu/autocomplete" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -34,7 +34,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.RWayTrieTest">
     <configuration name="NodeTest.testFunctionality" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Autocomplete" />
       <extension name="coverage">
@@ -51,8 +51,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RWayTrieTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Autocomplete" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ua.edu.ucu.autocomplete.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ua.edu.ucu.autocomplete" />
+      <option name="MAIN_CLASS_NAME" value="ua.edu.ucu.autocomplete.RWayTrieTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RWayTrieTest" />
         <item itemvalue="JUnit.NodeTest.testFunctionality" />
       </list>
     </recent_temporary>

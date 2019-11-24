@@ -20,7 +20,7 @@ public class NodeTest {
     @Test
     public void testFunctionality() {
         assertEquals(example, new Node('0'));
-        assertEquals(example.getNext().get(0), new Node('a'));
+        assertEquals(example.getChildren().get(0), new Node('a'));
         assertTrue(example.hasChild('a'));
         assertFalse(example.hasChild('d'));
 
@@ -29,7 +29,7 @@ public class NodeTest {
         example.addChild(node);
 
         assertTrue(example.hasChild('d'));
-        assertTrue(example.getNext().get(3).hasChild('e'));
+        assertTrue(example.getChildren().get(3).hasChild('e'));
 
         assertEquals(node.getWeight(), 3);
         assertEquals(example.getWeight(), 0);

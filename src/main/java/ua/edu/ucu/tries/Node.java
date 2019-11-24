@@ -49,6 +49,17 @@ public class Node {
         children.add(new Node(ch));
     }
 
+    public void deleteChild(char ch) {
+        if (hasChild(ch)) {
+            for (int i = 0; i < children.size(); i++) {
+                if (children.get(i).getLetter() == ch) {
+                    children.remove(i);
+                    return;
+                }
+            }
+        }
+    }
+
     public void addChild(Node node) {
         children.add(node);
     }
@@ -64,23 +75,6 @@ public class Node {
             }
         }
         return null;
-    }
-
-    // Make sense only in RWayTrie
-    public int size() {
-        if (children.isEmpty() && weight != 0) {
-            return 1;
-        }
-        int sum = 0;
-        for (Node child: children) {
-            sum += child.size();
-        }
-        if (this.getWeight() > 0) {
-            return sum + 1;
-        }
-        else {
-            return sum;
-        }
     }
 
     @Override
