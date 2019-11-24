@@ -2,7 +2,6 @@ package ua.edu.ucu.autocomplete;
 
 import ua.edu.ucu.tries.Trie;
 import ua.edu.ucu.tries.Tuple;
-import ua.edu.ucu.utils.Queue;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

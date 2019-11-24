@@ -35,7 +35,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RWayTrieTest">
+  <component name="RunManager" selected="JUnit.PrefixMatchesITTest">
     <configuration name="NodeTest.testFunctionality" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Autocomplete" />
       <extension name="coverage">
@@ -48,6 +48,21 @@
       <option name="MAIN_CLASS_NAME" value="ua.edu.ucu.autocomplete.NodeTest" />
       <option name="METHOD_NAME" value="testFunctionality" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PrefixMatchesITTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Autocomplete" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ua.edu.ucu.autocomplete.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ua.edu.ucu.autocomplete" />
+      <option name="MAIN_CLASS_NAME" value="ua.edu.ucu.autocomplete.PrefixMatchesITTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -69,6 +84,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PrefixMatchesITTest" />
         <item itemvalue="JUnit.RWayTrieTest" />
         <item itemvalue="JUnit.NodeTest.testFunctionality" />
       </list>

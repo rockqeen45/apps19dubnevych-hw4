@@ -21,24 +21,17 @@ public class Node {
         this.weight = weight;
     }
 
-    public void setChildren(List<Node> children) {
-        this.children = children;
-    }
 
     public int getWeight() {
         return weight;
     }
 
-    public void setWeight(int weight) {
-        this.weight = weight;
+    public void setWeight(int w) {
+        this.weight = w;
     }
 
     public char getLetter() {
         return letter;
-    }
-
-    public void setLetter(char letter) {
-        this.letter = letter;
     }
 
     public List<Node> getChildren() {
@@ -47,17 +40,6 @@ public class Node {
 
     public void addChild(char ch) {
         children.add(new Node(ch));
-    }
-
-    public void deleteChild(char ch) {
-        if (hasChild(ch)) {
-            for (int i = 0; i < children.size(); i++) {
-                if (children.get(i).getLetter() == ch) {
-                    children.remove(i);
-                    return;
-                }
-            }
-        }
     }
 
     public void addChild(Node node) {
